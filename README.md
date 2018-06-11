@@ -1,3 +1,12 @@
+# Why the fork?
+
+To add support for cljc reader conditionals.
+
+- https://github.com/venantius/yagni/issues/37
+- https://github.com/venantius/yagni/pull/39
+
+---
+
 # Yagni
 [![Build Status](https://travis-ci.org/venantius/yagni.svg?branch=master)](https://travis-ci.org/venantius/yagni)
 [![Dependency Status](https://www.versioneye.com/user/projects/5585e7f0363861001b000215/badge.svg?style=flat)](https://www.versioneye.com/user/projects/5585e7f0363861001b000215)
