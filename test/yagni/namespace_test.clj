@@ -10,11 +10,13 @@
          'yagni.namespace-test/x)))
 
 (deftest qualified-interns-works
-  (is (= (namesp/qualified-interns 'yagni.sample-ns)
-         '(yagni.sample-ns/y
-           yagni.sample-ns/x))))
+  (is (= (sort (namesp/qualified-interns 'yagni.sample-ns))
+         '(yagni.sample-ns/form-for-testing-get
+           yagni.sample-ns/x
+           yagni.sample-ns/y))))
 
 (deftest named-vars-map-works
   (is (= (namesp/named-vars-map ['yagni.sample-ns])
-         {'yagni.sample-ns/y #{}
-          'yagni.sample-ns/x #{}})))
+         {'yagni.sample-ns/x #{}
+          'yagni.sample-ns/form-for-testing-get #{}
+          'yagni.sample-ns/y #{}})))
